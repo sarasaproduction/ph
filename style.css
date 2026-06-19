@@ -416,3 +416,25 @@ footer a {
         padding-top: 100px;
     }
 }
+@media screen and (max-width: 600px) {
+    
+    /* 1. Cari class pembungkus semua tombol sosmed lu (misal namanya .social-bar, .socmed, dll) */
+    /* Taruh nama class pembungkusnya di sini biar susunannya otomatis ke bawah */
+    .social-bar, .social-container, .footer-socials { 
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+        padding: 10px 20px !important;
+    }
+
+    /* 2. Ini buat ngerapihin tombol TikTok dan temen-temennya */
+    .btn-tiktok, .btn-instagram, .btn-youtube, .btn-ig, .btn-yt {
+        width: 100% !important;             /* Paksa tombol melebar penuh semuka HP */
+        max-width: 100% !important;
+        display: flex !important;
+        justify-content: center !important; /* Bikin icon + tulisan pas di tengah tombol */
+        align-items: center !important;
+        box-sizing: border-box !important;
+        padding: 12px !important;           /* Biar agak tebal, enak dipencet jempol */
+    }
+}
